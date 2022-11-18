@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+
+    <title>HTML5 con Flask</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.css">
+    <link rel="stylesheet" href="{{ url_for("static", filename="index.css") }}">
+    {{ moment.include_moment() }}
+</head>
+
+<body>
+{% block content %}{% endblock %}
+</body>
+</html>
